@@ -1,0 +1,49 @@
+
+body{
+  background-color: #00aaff;
+}
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px; /* Space between keys */
+    background-color: #333; /* Keyboard background */
+    padding: 40px 20px 40px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+  
+  .key {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #00aaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 6px #222;
+  }
+  
+  .key.enter {
+    grid-column: span 2; /* Enter key spans 2 columns */
+  }
+  
+  .key.shift2 {
+    grid-column: span 2; /* Shift keys span 2 columns */
+  }
+  
+  .key.control,
+  .key.option,
+  .key.alt,
+  .key.globe {
+    grid-column: span 1; /* Control, Option, Alt keys span 1 column */
+  }
+  
+  .key.space {
+    grid-column: span 6; /* Space key spans 6 columns */
+  }
+  .key:hover {
+    color:aliceblue;
+    background-color:#18a18f;
+  }

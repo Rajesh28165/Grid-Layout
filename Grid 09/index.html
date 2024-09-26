@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x2 Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        .item{
+            padding:20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item" style="background-color: lightblue;">1</div>
+        <div class="item" style="background-color: pink;">2</div>
+        <div class="item" style="background-color: lightgreen;">3</div>
+        <div class="item" style="background-color: rgb(212, 212, 104);">4</div>
+        <div class="item" style="background-color:rgb(79, 92, 104)">5</div>
+        <div class="item" style="background-color: lightgray;">6</div>
+        <div class="item" style="background-color: rgb(230, 139, 106);">7</div>
+        <div class="item" style="background-color: wheat;">8</div>
+    </div>
+
+</body>
+</html>
